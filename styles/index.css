@@ -14,9 +14,11 @@ main {
     padding: 20px;
     background-color: #1b2730;
     color: white;
-    text-align: center;
-    max-width: 65%
+    text-align: center; /* Set text alignment to left */
+    max-width: 80%; /* Adjust the max-width as needed for a narrower display */
     margin: 0 auto;
+    overflow: auto;
+    max-height: 60%;
 }
 
 .news {
@@ -31,7 +33,7 @@ main {
     background-color: #1b2730;
     color: white;
     text-align: left; /* Set text alignment to left */
-    max-width: 65%; /* Adjust the max-width as needed for a narrower display */
+    max-width: 80%; /* Adjust the max-width as needed for a narrower display */
     margin: 0 auto;
     overflow: auto;
     max-height: 60%;
