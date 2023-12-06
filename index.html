@@ -1,5 +1,20 @@
 <div id="header-container"></div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("header-container").innerHTML = this.responseText;
+            }
+        };
+        xhttp.open("GET", "https://cubi.games/header.html", true);
+        xhttp.send();
+    });
+</script>
 
+body {
+    background: #1b2730;
+}
     <main>
         <!-- Front Page Content -->
 <!-- Front Page Content -->
@@ -39,17 +54,5 @@
 </body>
 </html>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function () {
-            if (this.readyState == 4 && this.status == 200) {
-                document.getElementById("header-container").innerHTML = this.responseText;
-            }
-        };
-        xhttp.open("GET", "https://cubi.games/header.html", true);
-        xhttp.send();
-    });
-</script>
 
 
