@@ -22,7 +22,7 @@ main {
     color: white;
     text-align: left; /* Set text alignment to left */
     max-width: 65%; /* Adjust the max-width as needed for a narrower display */
-    text-align: center;
+    margin: 0 auto;
 
 }
 
