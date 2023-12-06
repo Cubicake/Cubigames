@@ -47,3 +47,16 @@ main {
     text-align: center; /* Center the News section heading */
 }
 
+/* mobile handling */
+@media only screen and (max-width: 768px) {
+    .news {
+        max-width: 90%; /* Adjust max-width for smaller screens */
+        height: auto; /* Allow auto height for better mobile display */
+        overflow: visible; /* Disable scrolling on smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .news h2 {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+}
