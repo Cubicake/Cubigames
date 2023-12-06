@@ -39,16 +39,16 @@ main {
     max-height: 60%;
 }
 
-.news::-webkit-scrollbar {
+.news-item::-webkit-scrollbar {
     width: 12px; /* Set the width of the scrollbar */
 }
 
-.news::-webkit-scrollbar-thumb {
+.news-item::-webkit-scrollbar-thumb {
     background-color: #2c3e50; /* Set the color of the scrollbar thumb */
     border-radius: 6px; /* Set the border radius for a rounded appearance */
 }
 
-.news::-webkit-scrollbar-track {
+.news-item::-webkit-scrollbar-track {
     background-color: #34495e; /* Set the color of the scrollbar track */
 }
 
