@@ -47,3 +47,77 @@ nav a {
 nav a:hover {
     color: gold;
 }
+
+/* Common styles for header */
+header {
+    background-color: #1b2730;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.sticky-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo-container {
+    margin-right: auto;
+}
+
+.logo-container img {
+    width: auto;
+    height: 80px;
+    border-radius: 0;
+    border: none;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: gold;
+}
+
+/* Media query for mobile screens */
+@media only screen and (max-width: 600px) {
+    .sticky-header {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center; /* Center text */
+    }
+
+    .logo-container {
+        margin: 0; /* Center the logo */
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center; /* Center items */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Adjust spacing between items */
+    }
+}
+
+
