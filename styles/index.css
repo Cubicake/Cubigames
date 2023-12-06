@@ -19,6 +19,10 @@ main {
     margin: 0 auto;
 }
 
+.about-us h2 {
+    text-align: center; /* Center the News section heading */
+}
+
 .news {
     background-color: #1b2730;
     color: white;
