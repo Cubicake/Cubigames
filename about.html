@@ -1,28 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cubi.games/styles.css">
-    <link rel="icon" type="image/x-icon" href="https://www.cubi.games/favicon.ico">
-    <title>CubiGames</title>
-</head>
-<body>
-    <header>
-        <nav class="sticky-header">
-            <div class="logo-container">
-                <a href="https://cubi.games">
-                    <img src="https://cubi.games/websitelogo.png" alt="Website Logo">
-                </a>
-            </div>
-            <ul>
-                <li><a href="https://cubi.games/about">About Us</a></li>
-                <li><a href="https://cubi.games/projects/other">Our Other Projects</a></li>
-                <li><a href="https://cubi.games/mc/store">Store</a></li>
-                <li><a href="https://discord.cubi.games">Discord</a></li>
-            </ul>
-        </nav>
-    </header>
+<div id="header-container"></div> <style>body {background: #1b2730;}</style>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("header-container").innerHTML = this.responseText;
+            }
+        };
+        xhttp.open("GET", "https://cubi.games/header.html", true);
+        xhttp.send();
+    });
+</script>
 
       body {
         background: #1b2730;  /* fallback for old browsers */
