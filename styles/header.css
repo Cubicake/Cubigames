@@ -99,33 +99,22 @@ nav a:hover {
     color: gold;
 }
 
-/* Media query for mobile screens */
 @media only screen and (max-width: 600px) {
     .sticky-header {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: column; /* Stack items vertically */
+        text-align: center; /* Center text */
     }
 
     .logo-container {
-        margin: 0;
-    }
-
-    .menu-icon {
-        display: block;
-        cursor: pointer;
+        margin: 0; /* Center the logo */
     }
 
     nav ul {
         flex-direction: column;
-        align-items: center;
-        display: none; /* Hide the menu by default */
-    }
-
-    nav ul.active {
-        display: flex; /* Show the menu when active */
+        align-items: center; /* Center items */
     }
 
     nav ul li {
-        margin: 10px 0;
+        margin: 10px 0; /* Adjust spacing between items */
     }
 }
