@@ -1,210 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  
-  <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">  
-    <link rel="icon" href="http://www.cubi.games/favicon.ico">
-    <title>CubiGames</title>
-    <style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="https://www.cubi.games/favicon.ico">
+    <title>Your Website Title</title>
+</head>
+<body>
+    <header>
+        <nav class="sticky-header">
+            <div class="logo-container">
+                <a href="https://cubi.games">
+                    <img src="https://cubi.games/websitelogo.png" alt="Website Logo">
+                </a>
+            </div>
+            <ul>
+                <li><a href="https://cubi.games/about">About Us</a></li>
+                <li><a href="https://cubi.games/projects/other">Our Other Projects</a></li>
+                <li><a href="https://cubi.games/mc/store">Store</a></li>
+                <li><a href="https://discord.cubi.games">Discord</a></li>
+            </ul>
+        </nav>
+    </header>
 
-      body {
-        background: #1b2730;  /* fallback for old browsers */
-        /* background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-        /* background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-      }
+    <main>
+        <!-- Front Page Content -->
+<!-- Front Page Content -->
+  <section class="about-us">
+    <h2>About Us</h2>
+    <p>Welcome to our website! We are a passionate team dedicated to creating exciting and innovative projects. Learn more about our journey and mission. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Gravida cum sociis natoque penatibus et magnis dis. Posuere morbi leo urna molestie at elementum eu facilisis. Odio aenean sed adipiscing diam. Malesuada bibendum arcu vitae elementum curabitur vitae nunc sed velit. Nam aliquam sem et tortor consequat. Suspendisse faucibus interdum posuere lorem ipsum dolor sit amet consectetur. Nunc sed velit dignissim sodales ut eu sem integer. Velit scelerisque in dictum non consectetur a. Enim sit amet venenatis urna cursus eget. Gravida dictum fusce ut placerat. Ornare arcu dui vivamus arcu felis bibendum ut tristique. Integer feugiat scelerisque varius morbi. Amet massa vitae tortor condimentum lacinia quis. Nisi lacus sed viverra tellus in. Nisl nisi scelerisque eu ultrices vitae auctor eu augue ut.
 
-        .container {
-          width: 100%;
-          height: 100%;
-          padding-right: 15px;
-          padding-left: 15px;
-          margin-right: auto;
-          margin-left: auto;
-        }
-
-        .image {
-          background-image: url("cubigame-logo-64x64 varient 96x96.png");
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-position: center; 
-          width: 200px;
-          height: 200px;
-          border-radius: 50%;
-          margin: 0 auto;
-          border: 5px solid #fdf5e6;
-        }
-        .white-color {
-        color:white;
-        }
-
-        a {
-          font-size: large;
-        }
-
-        .w3-border {
-          border: 3px solid #ccc !important;
-        }
-
-        .links-container {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          gap: 20px;
-        }
-
-        .links-container a {
-          width: 100%;
-          color: #414345 !important;
-          transition: 0.2s;
-        }
-
-        .links-container a:hover {
-          opacity: 1;
-        }
-
-        .profession {
-          margin-top: 15px !important;
-        }
-
-        .profession span {
-          font-size: 14px;
-        }
-
-        .icons {
-          display: flex;
-          justify-content: center;
-          gap: 10px;
-        }
-
-        .icons a {
-          text-decoration: none;
-        }
-
-        .icons a svg {
-          fill: #fdf5e6 !important;
-          transform: scale(1);
-        }
-
-        .border {
-          border: 3px ridge #fdf5e6;
-        }
-
-        .contact {
-          text-align: center;
-          color: #fdf5e6;
-        }
-
-        .contact .info {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          gap: 15px;
-        }
-
-        .contact .info span {
-          display: flex;
-          align-items: center;
-          gap: 15px;
-        }
-
-        .bio {
-          font-size: 11px;
-          text-align: center;
-        }
-
-        @media screen and (min-width: 768px) {
-          .link {
-            width: 100%;
-          }
-
-          a {
-            font-size: x-large;
-          }
-
-        }
-        @media screen and (min-width: 576px) {
-          .container {
-            max-width: 540px;
-          }
-
-          .profession span {
-            font-size: 24px;
-          }
-          
-          .bio {
-            font-size: 15px;
-          }
-
-        }
-
-    </style>
-    <script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
-    
-  </head>
-  <body>
-    <!-- Content container -->
-    <div class="container">
-
-      <!-- Image and name container -->
-      <div class="w3-margin-top" style="text-align: center">
-        <div class="image w3-round"></div>
-        <p class="profession"><span class="w3-padding w3-margin" style="font-weight: bolder; color: #fdf5e6"><span style="color: #ffcc66">Cubi<span style="color: #fdf5e6">Games</span></span></p>
-        <p class="bio"><span class="w3-padding w3-margin" style="font-weight: bolder; color: #fdf5e6">Minecraft and more</span></p><br>
-      </div>
-
-      <!-- Links section 1 -->
-      <div class="links-container">
-        <a href="https://www.cubi.games/projects/CubigamesMC/" class="w3-button w3-sand w3-hover-pale-green link border" target="_blank">CubiGames MC</a>
-        <a href="https://cubi.games/about" class="w3-button w3-sand w3-hover-pale-green link border" target="_blank">About us</a>
-        <a href="https://discord.cubi.games" class="w3-button w3-sand w3-hover-pale-green link border" target="_blank">Join our discord</a>
-        <a class="w3-button w3-sand w3-hover-pale-green link border" target="_blank" onclick="myFunction()">Our other projects</a>
-
-      </div>
-
-    <script>
-function myFunction() {
-  console.log("huh")
-  alert("We don't currently have any other projects. Check back later!")
-}
-    </script>
-      <!-- Links section 2
-      <div class="icons w3-padding">
-        <a href="#" target="_blank">
-          <i data-feather="facebook"></i>
-        </a>
-        <a href="#" target="_blank">
-          <i data-feather="twitter"></i>
-        </a>
-        <a href="#" target="_blank">
-          <i data-feather="linkedin"></i>
-        </a>-->
-        <!--
-        <a href="https://discord.gg/qAnCazgCHb" target="_blank">
-          <p1><center><small><FONT COLOR="#fdf5e6"><span class="bi bi-discord white-color"></span></FONT></span></p1>-->
-      </div><br>
+      Nam at lectus urna duis convallis convallis. At ultrices mi tempus imperdiet nulla malesuada. Elementum integer enim neque volutpat ac. Mi ipsum faucibus vitae aliquet nec. Vulputate sapien nec sagittis aliquam. Duis at consectetur lorem donec massa sapien. Tempus quam pellentesque nec nam aliquam sem et. Consequat id porta nibh venenatis cras sed felis eget. Porta lorem mollis aliquam ut porttitor leo. Massa sapien faucibus et molestie ac feugiat. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Non arcu risus quis varius.
       
-        <div class="contact">
-          <p class=""><span class="w3-padding w3-margin" style="font-weight: bolder; color: #fdf5e6">CONTACT US</span></p>
-          <div class="info">
-            <!---<a href = "tel: +49123456789"><span><i data-feather="phone"></i> +49123456789</span></a>-->
-            <a href = "mailto: cubicakeco@gmail.com"><span><i data-feather="mail"></i> cubicakeco@gmail.com</span></a>
-            </a>
-          </div>
-        </div>
-            <a href="https://discord.cubi.games" target="_blank">
-              <p1><center><span class="bi bi-discord white-color"></span><nobr><FONT COLOR="#fdf5e6"> Join our discord</FONT></span></p1>
-            </a><br>
-      </footer>
-      </div>
-
+      Nulla aliquet porttitor lacus luctus accumsan tortor posuere ac ut. Porta non pulvinar neque laoreet suspendisse interdum consectetur. Et tortor consequat id porta nibh venenatis cras sed felis. Fermentum odio eu feugiat pretium nibh ipsum consequat nisl vel. Ac turpis egestas maecenas pharetra convallis posuere morbi leo. Ipsum a arcu cursus vitae congue mauris rhoncus aenean vel. Non nisi est sit amet facilisis magna etiam. Amet consectetur adipiscing elit ut aliquam purus. Eget nullam non nisi est sit amet facilisis. Donec massa sapien faucibus et molestie ac feugiat.
+      
+      Dignissim diam quis enim lobortis scelerisque fermentum. Volutpat consequat mauris nunc congue nisi vitae. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper. Lacus laoreet non curabitur gravida. Scelerisque purus semper eget duis at tellus. Enim neque volutpat ac tincidunt vitae semper. Placerat orci nulla pellentesque dignissim enim sit amet. Id aliquet risus feugiat in ante metus dictum. Consequat interdum varius sit amet mattis vulputate. Convallis aenean et tortor at risus viverra adipiscing. Convallis posuere morbi leo urna molestie at elementum eu. Turpis massa tincidunt dui ut ornare lectus sit amet est. Accumsan lacus vel facilisis volutpat est. Rhoncus est pellentesque elit ullamcorper. Vestibulum mattis ullamcorper velit sed ullamcorper morbi. Sed tempus urna et pharetra pharetra massa massa ultricies. Viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis. Purus faucibus ornare suspendisse sed.
+      
+      Dolor magna eget est lorem ipsum dolor. Hendrerit dolor magna eget est lorem ipsum. Urna et pharetra pharetra massa massa ultricies. Id aliquet risus feugiat in ante. Bibendum est ultricies integer quis auctor elit sed vulputate mi. Aenean pharetra magna ac placerat. Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit. Accumsan lacus vel facilisis volutpat est velit egestas dui. Justo donec enim diam vulputate. Sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus. Faucibus purus in massa tempor nec feugiat nisl pretium fusce. Ante in nibh mauris cursus mattis molestie a iaculis. Ut pharetra sit amet aliquam id diam maecenas ultricies mi. Eget nullam non nisi est sit amet. Et odio pellentesque diam volutpat commodo sed egestas.
+      
+      Rhoncus dolor purus non enim praesent. Viverra nibh cras pulvinar mattis nunc sed. Vitae suscipit tellus mauris a diam maecenas sed enim. Risus quis varius quam quisque id. Quis eleifend quam adipiscing vitae proin sagittis nisl. Tortor at risus viverra adipiscing at in. Imperdiet dui accumsan sit amet nulla facilisi morbi tempus iaculis. Tortor aliquam nulla facilisi cras fermentum odio. Amet dictum sit amet justo donec enim diam vulputate ut. Sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus. Volutpat ac tincidunt vitae semper quis lectus nulla at. Enim ut sem viverra aliquet eget sit amet tellus cras. Lobortis feugiat vivamus at augue eget arcu dictum varius duis.
+      
+      Dictum varius duis at consectetur lorem donec massa sapien faucibus. Sed libero enim sed faucibus turpis in. Ante metus dictum at tempor commodo ullamcorper. Orci eu lobortis elementum nibh tellus molestie nunc. Id leo in vitae turpis. Aliquet sagittis id consectetur purus. Cursus euismod quis viverra nibh. Aliquam sem fringilla ut morbi tincidunt augue interdum velit. Dolor sit amet consectetur adipiscing. Vulputate dignissim suspendisse in est ante in nibh. Diam sollicitudin tempor id eu. Morbi tristique senectus et netus et malesuada.
+      
+      Pretium fusce id velit ut tortor pretium viverra. Urna nunc id cursus metus aliquam eleifend. Semper feugiat nibh sed pulvinar proin gravida hendrerit. Sagittis eu volutpat odio facilisis mauris sit amet massa vitae. Tortor at auctor urna nunc id cursus metus aliquam. Massa eget egestas purus viverra accumsan in. Aenean et tortor at risus viverra. Ut eu sem integer vitae justo eget magna fermentum iaculis. In tellus integer feugiat scelerisque varius morbi enim nunc. Massa tincidunt nunc pulvinar sapien. Ultrices vitae auctor eu augue ut lectus arcu bibendum. Leo a diam sollicitudin tempor. Nec ullamcorper sit amet risus. Facilisis mauris sit amet massa vitae tortor condimentum lacinia quis.
+      
+      In mollis nunc sed id semper risus in. Sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula. Aliquet eget sit amet tellus cras adipiscing enim eu turpis. Integer enim neque volutpat ac tincidunt vitae semper quis. Adipiscing tristique risus nec feugiat in. Turpis massa sed elementum tempus. Dictum fusce ut placerat orci. Aliquam id diam maecenas ultricies mi eget mauris pharetra. Eu consequat ac felis donec et odio pellentesque diam. Habitant morbi tristique senectus et netus et. Mi bibendum neque egestas congue quisque egestas.
+      
+      Penatibus et magnis dis parturient montes nascetur ridiculus mus. Ac auctor augue mauris augue neque gravida in fermentum. Velit sed ullamcorper morbi tincidunt ornare. Nibh venenatis cras sed felis eget velit aliquet sagittis. Viverra vitae congue eu consequat ac felis. Malesuada fames ac turpis egestas sed tempus urna et. Aliquam sem fringilla ut morbi tincidunt augue interdum. Nunc sed blandit libero volutpat sed. In est ante in nibh mauris cursus mattis molestie. Ipsum consequat nisl vel pretium lectus quam id leo in. Cras pulvinar mattis nunc sed blandit. Lacus sed viverra tellus in hac. Tristique senectus et netus et. Morbi tincidunt ornare massa eget egestas purus viverra accumsan. Tristique et egestas quis ipsum. Laoreet suspendisse interdum consectetur libero id faucibus nisl. Sit amet mauris commodo quis.</p>
+  </section>
+  <section class="news">
+    <h2>Latest News</h2>
+    <div class="news-item">
+        <h3>Exciting Announcement!</h3>
+        <p>Stay tuned for our upcoming project. We can't wait to share the details with you!</p>
+        <span class="date">December 6, 2023</span>
     </div>
-    <script>
-      feather.replace()
-    </script>
-  </body>  
+    <!-- Add more news items as needed -->
+  </section>
+
+    </main>
+</body>
 </html>
