@@ -9,11 +9,27 @@ main {
     padding: 20px;
 }
 
-.about-us,
-.news {
+.about-us {
     margin-bottom: 20px;
     padding: 20px;
     background-color: #1b2730;
     color: white;
     text-align: center;
+}
+
+.news {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #1b2730;
+    color: white;
+    text-align: left; /* Set text alignment to left */
+}
+
+.news-item {
+    max-width: 600px; /* Adjust the max-width as needed for a narrower display */
+    margin: 0 auto; /* Center the news section */
+}
+
+.news h2 {
+    text-align: center; /* Center the News section heading */
 }
