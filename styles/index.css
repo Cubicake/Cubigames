@@ -10,12 +10,12 @@ main {
 }
 
 .about-us {
-    /*margin-bottom: 20px;
-    padding: 20px;*/
+    margin-bottom: 10%;
+    padding: 10%;
     background-color: #1b2730;
     color: white;
     text-align: left; /* Set text alignment to left */
-    max-width: 80%; /* Adjust the max-width as needed for a narrower display */
+    max-width: 65%; /* Adjust the max-width as needed for a narrower display */
     margin: 0 auto;
 }
 
