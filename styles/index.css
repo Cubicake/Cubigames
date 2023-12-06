@@ -33,7 +33,7 @@ main {
     max-width: 65%; /* Adjust the max-width as needed for a narrower display */
     margin: 0 auto;
     overflow: auto;
-    height: 60%;
+    max-height: 60%;
 }
 
 .news h2 {
