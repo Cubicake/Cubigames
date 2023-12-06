@@ -10,8 +10,8 @@ main {
 }
 
 .about-us {
-    margin-bottom: 20px;
-    padding: 20px;
+    /*margin-bottom: 20px;
+    padding: 20px;*/
     background-color: #1b2730;
     color: white;
     text-align: left; /* Set text alignment to left */
