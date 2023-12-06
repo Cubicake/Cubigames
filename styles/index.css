@@ -1,4 +1,3 @@
-/* styles/index.css */
 body {
     margin: 0;
     padding: 0;
@@ -28,6 +27,9 @@ main {
     margin: 0 auto; /* Center the news section */
     height: 300px; /* Set a fixed height for the News section */
     overflow: auto; /* Allow scrolling when content exceeds the height */
+}
+
+.news-item {
     margin-bottom: 20px; /* Add some space between news items */
 }
 
