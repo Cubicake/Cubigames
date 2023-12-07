@@ -1,0 +1,14 @@
+[
+  {
+    "id": "news-2",
+    "content": `
+      <h3 id="news-2">Mobile Support Added</h3>
+      <div class="news-item">
+          <p>In a continuation of yesterday's website revamp, we have optimised the website for mobile. Notable changes are that the CubiGames logo is now displayed above the navigation menu on mobile devices.</p>
+          <span class="date">Thursday December 7, 2023</span>
+      </div>
+    `
+  },
+  // Add more articles as needed
+]
+
