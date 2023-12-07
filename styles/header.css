@@ -99,22 +99,40 @@ nav a:hover {
     color: gold;
 }
 
-@media only screen and (max-width: 600px) {
-    .sticky-header {
-        flex-direction: column; /* Stack items vertically */
-        text-align: center; /* Center text */
-    }
-
-    .logo-container {
-        margin: 0; /* Center the logo */
-    }
-
+@media screen and (max-width: 768px) {
     nav ul {
+        display: none; /* Hide the navigation links by default */
         flex-direction: column;
-        align-items: center; /* Center items */
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #1b2730;
+    }
+
+    nav ul.show {
+        display: flex; /* Show the navigation links when the class is added */
     }
 
     nav ul li {
-        margin: 10px 0; /* Adjust spacing between items */
+        margin: 0;
+        text-align: center;
+    }
+
+    .sticky-header {
+        flex-direction: column; /* Stack logo and navigation vertically */
+        align-items: flex-start;
+    }
+
+    .sticky-header .logo-container {
+        margin: 0;
+        margin-bottom: 10px; /* Add space between logo and dropdown */
+    }
+
+    .sticky-header button {
+        background-color: #1b2730;
+        color: white;
+        border: none;
+        cursor: pointer;
     }
 }
