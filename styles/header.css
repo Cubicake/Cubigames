@@ -100,3 +100,17 @@ nav a:hover {
     color: gold;
 }
 
+@media (max-width: 600px) {
+    .sticky-header {
+        flex-direction: column; /* Change to a column layout for smaller screens */
+        text-align: center; /* Center the content in the column */
+    }
+
+    .logo-container {
+        margin: 0; /* Remove the margin to center the logo in the column */
+    }
+
+    nav ul {
+        margin-top: 10px; /* Add some spacing between the logo and the navigation on mobile */
+    }
+}
