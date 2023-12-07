@@ -43,7 +43,18 @@
       // Iterate through the articles and create list items
       articles.forEach((article) => {
         const listItem = document.createElement("li");
-        listItem.innerHTML = `<h3>${article.title}</h3><p>${article.content}</p>`;
+
+        // Extract the id and date from the article content
+        const [, id, date] = article.content.split("\n");
+
+        listItem.innerHTML = `
+          <h3 id="${id}">${article.title}</h3>
+          <div class="news-item">
+            <p>${article.content}</p>
+            <span class="date">${date}</span>
+          </div>
+        `;
+
         newsList.appendChild(listItem);
       });
     });
@@ -68,3 +79,4 @@
     return articles;
   }
 </script>
+
