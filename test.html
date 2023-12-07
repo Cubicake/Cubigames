@@ -1,0 +1,41 @@
+<p>test</p>
+<ul id="news-list"></ul>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    loadNewsArticles();
+  });
+
+  function loadNewsArticles() {
+    const newsList = document.getElementById("news-list");
+
+    // Fetch news articles from the "news-articles" folder
+    fetchNewsArticles().then((articles) => {
+      // Iterate through the articles and create list items
+      articles.forEach((article) => {
+        const listItem = document.createElement("li");
+        listItem.innerHTML = `<h3>${article.title}</h3><p>${article.content}</p>`;
+        newsList.appendChild(listItem);
+      });
+    });
+  }
+
+  async function fetchNewsArticles() {
+    const response = await fetch("news-articles-list.json");
+    const articlesList = await response.json();
+
+    // Fetch individual articles using the file paths in the list
+    const articles = await Promise.all(
+      articlesList.map(async (filePath) => {
+        const articleResponse = await fetch(filePath);
+        const articleContent = await articleResponse.text();
+
+        // Parse the article content from the text file
+        const [title, ...content] = articleContent.split("\n");
+        return { title, content: content.join("\n") };
+      })
+    );
+
+    return articles;
+  }
+</script>
