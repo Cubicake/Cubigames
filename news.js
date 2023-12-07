@@ -1,18 +1,21 @@
 document.addEventListener('DOMContentLoaded', async function () {
     const newsContainer = document.getElementById('news-container');
 
-    // Fetch news articles from the "news-articles" folder
+    // Fetch the list of news article file locations from the "news-articles.json" file
     const response = await fetch('news-articles.json');
-    const articles = await response.json();
+    const articleLocations = await response.json();
 
-    // Display each news article
-    articles.forEach(article => {
+    // Load and display each news article
+    for (const articleLocation of articleLocations) {
+        const articleResponse = await fetch(articleLocation);
+        const article = await articleResponse.json();
+
         const articleDiv = document.createElement('div');
         articleDiv.id = article.id; // Set the id attribute for the article div
         articleDiv.className = 'news-item';
         articleDiv.innerHTML = article.content;
         newsContainer.appendChild(articleDiv);
-    });
+    }
 
     // Check if there's a fragment identifier in the URL and scroll to the corresponding news item
     const fragmentId = window.location.hash.substring(1);
