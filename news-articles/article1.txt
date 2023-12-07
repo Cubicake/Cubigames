@@ -1,0 +1,3 @@
+Article 1 Title
+path/url#news-1
+This is the content of the article.
