@@ -84,6 +84,24 @@ nav ul {
     justify-content: center;
 }
 
+hideable-desktop{
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+hideable-mobile {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+
+
 nav ul li {
     margin-right: 20px;
 }
