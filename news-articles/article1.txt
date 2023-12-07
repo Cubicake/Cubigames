@@ -1,5 +1,0 @@
-Article 1 Title
-news-1
-Thursday 7th December 2023
-This is the content of the article.
-erf
