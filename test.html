@@ -1,5 +1,34 @@
-<p>test</p>
-<ul id="news-list"></ul>
+<div id="header-container"></div>    
+<link rel="stylesheet" href="https://cubi.games/styles/index.css">
+<link rel="icon" type="image/x-icon" href="https://www.cubi.games/favicon.ico">
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("header-container").innerHTML = this.responseText;
+            }
+        };
+        xhttp.open("GET", "https://cubi.games/header.html", true);
+        xhttp.send();
+    });
+</script>
+
+    <main>
+        <!-- Front Page Content -->
+<!-- Front Page Content -->
+  <section class="about-us">
+    <h2>About Us</h2>
+    <p>Welcome to our website! We are a passionate team dedicated to creating an exciting and innovative Minecraft server network. Unlike other Minecraft networks, we strive for equality. At CubiGames, we believe that neither your proximity to the continental USA nor the version of Minecraft that you play should affect your playing experience. You can learn more about us and our mission at our about page.</p>
+  </section>
+
+  <section class="news">
+    <ul id="news-list"></ul>
+  </section>
+
+    </main>
+</body>
+</html>
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
