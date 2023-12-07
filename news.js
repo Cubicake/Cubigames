@@ -8,8 +8,18 @@ document.addEventListener('DOMContentLoaded', async function () {
     // Display each news article
     articles.forEach(article => {
         const articleDiv = document.createElement('div');
+        articleDiv.id = article.id; // Set the id attribute for the article div
         articleDiv.className = 'news-item';
         articleDiv.innerHTML = article.content;
         newsContainer.appendChild(articleDiv);
     });
+
+    // Check if there's a fragment identifier in the URL and scroll to the corresponding news item
+    const fragmentId = window.location.hash.substring(1);
+    if (fragmentId) {
+        const targetElement = document.getElementById(fragmentId);
+        if (targetElement) {
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
 });
