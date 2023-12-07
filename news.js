@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         const articleDiv = document.createElement('div');
         articleDiv.id = article.id; // Set the id attribute for the article div
         articleDiv.className = 'news-item';
-        articleDiv.innerHTML = article.content[0]; // Update this line
+        articleDiv.innerHTML = article.content; // Update this line
         newsContainer.appendChild(articleDiv);
     }
 
@@ -32,4 +32,3 @@ document.addEventListener('DOMContentLoaded', async function () {
         }
     }
 });
-
