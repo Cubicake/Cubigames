@@ -14,5 +14,9 @@
   {
     "id": "newline",
     "content": "<h3 id=\"newline\">newline</h3>\n<div class=\"news-item\">\n<p>text text text text text text\nNEW LINE BREAKS EVERYTHING</p>\n<span class=\"date\">a date in time</span>\n</div>"
+  },
+  {
+    "id": "1",
+    "content": "<h3 id=\"1\">1</h3>\n<div class=\"news-item\">\n<p>wjefgujwfe<br>Newline</p>\n<span class=\"date\">1</span>\n</div>"
   }
 ]
