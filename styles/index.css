@@ -75,4 +75,7 @@ main {
     .news h2 {
         font-size: 1.5rem; /* Adjust font size for smaller screens */
     }
+    main {
+        padding: 30%
+}
 }
